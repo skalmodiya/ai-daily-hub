@@ -293,20 +293,33 @@ function trendingItemHtml(r, i) {
 
 function renderTrendingByCategory() {
   const trendEl = document.getElementById('trending-list');
-  const groups = Object.entries(TRENDING_CAT_META).map(([key, meta]) => {
+  const groups = Object.entries(TRENDING_CAT_META).map(([key, meta], idx) => {
     const repos = CURATED_TRENDING.filter(r => r.cat === key);
-    if (!repos.length) {
-      return `<div class="trending-category-group">
-        <div class="trending-category-heading"><span>${meta.icon}</span>${escHtml(meta.label)}<span class="trending-cat-count">0</span></div>
-        <p style="font-size:13px;color:var(--text-muted);padding:8px 0;">Coming soon — resources being added.</p>
-      </div>`;
-    }
+    const open = idx === 0;
+    const body = repos.length
+      ? `<div class="trending-cat-list">${repos.map((r, i) => trendingItemHtml(r, i)).join('')}</div>`
+      : `<p style="font-size:13px;color:var(--text-muted);padding:8px 0 16px;">Coming soon — resources being added.</p>`;
     return `<div class="trending-category-group">
-      <div class="trending-category-heading"><span>${meta.icon}</span>${escHtml(meta.label)}<span class="trending-cat-count">${repos.length}</span></div>
-      <div class="trending-cat-list">${repos.map((r, i) => trendingItemHtml(r, i)).join('')}</div>
+      <button class="trending-category-heading${open ? ' open' : ''}" data-cat-key="${key}" aria-expanded="${open}">
+        <span>${meta.icon}</span>
+        <span>${escHtml(meta.label)}</span>
+        <span class="trending-cat-count">${repos.length}</span>
+        <span class="cat-chevron">${open ? '▲' : '▼'}</span>
+      </button>
+      <div class="trending-cat-body" style="display:${open ? 'block' : 'none'}">${body}</div>
     </div>`;
   }).join('');
   trendEl.innerHTML = groups;
+
+  trendEl.querySelectorAll('.trending-category-heading').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const body = btn.nextElementSibling;
+      const isOpen = btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      btn.querySelector('.cat-chevron').textContent = isOpen ? '▲' : '▼';
+      body.style.display = isOpen ? 'block' : 'none';
+    });
+  });
 }
 
 function renderTrending(repos, isLive) {
