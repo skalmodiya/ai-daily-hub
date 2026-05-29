@@ -61,13 +61,13 @@
         <strong style="color:var(--text-primary)">Today:</strong> <span id="hero-date"></span>
       </p>
       <div class="hero-actions">
-        <a href="#daily-picks" class="btn btn-primary">
+        <button class="btn btn-primary" onclick="switchTab('today')">
           🚀 Today's Picks
-        </a>
+        </button>
         <button class="btn btn-secondary" id="share-btn">
           🔗 Share This Page
         </button>
-        <a href="https://github.com/sunil-kalmodiya/ai-daily-hub" target="_blank" rel="noopener" class="btn btn-secondary">
+        <a href="https://github.com/skalmodiya/ai-daily-hub" target="_blank" rel="noopener" class="btn btn-secondary">
           ⭐ Star on GitHub
         </a>
       </div>
@@ -93,8 +93,38 @@
       </div>
     </div>
 
-    <!-- ─── Today's Featured Picks ─── -->
-    <section class="section" id="daily-picks">
+    <!-- ─── Tab Bar ─── -->
+    <div class="tab-bar-wrap">
+      <nav class="tab-bar" role="tablist" aria-label="Content sections">
+        <button class="tab active" role="tab" data-tab="today" aria-selected="true">
+          <span class="tab-icon">🌟</span>
+          <span class="tab-label">Today's Picks</span>
+          <span class="tab-badge">Daily</span>
+        </button>
+        <button class="tab" role="tab" data-tab="bonus" aria-selected="false">
+          <span class="tab-icon">🎁</span>
+          <span class="tab-label">Bonus Picks</span>
+        </button>
+        <button class="tab" role="tab" data-tab="trending" aria-selected="false">
+          <span class="tab-icon">📈</span>
+          <span class="tab-label">Trending</span>
+          <span class="tab-live" id="tab-live-dot"></span>
+        </button>
+        <button class="tab" role="tab" data-tab="explore" aria-selected="false">
+          <span class="tab-icon">🔍</span>
+          <span class="tab-label">Explore All</span>
+        </button>
+        <button class="tab" role="tab" data-tab="progress" aria-selected="false">
+          <span class="tab-icon">📊</span>
+          <span class="tab-label">My Progress</span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- ─── Tab Panels ─── -->
+
+    <!-- TODAY -->
+    <div class="tab-panel active" id="panel-today" role="tabpanel">
       <div class="section-header">
         <h2 class="section-title">
           <span class="section-title-icon icon-purple">🌟</span>
@@ -103,15 +133,14 @@
         <span class="section-badge">Changes Daily</span>
       </div>
       <div class="cards-grid" id="daily-grid">
-        <!-- Skeleton -->
         <div class="skeleton skeleton-card"></div>
         <div class="skeleton skeleton-card"></div>
         <div class="skeleton skeleton-card"></div>
       </div>
-    </section>
+    </div>
 
-    <!-- ─── Bonus Picks ─── -->
-    <section class="section">
+    <!-- BONUS -->
+    <div class="tab-panel" id="panel-bonus" role="tabpanel">
       <div class="section-header">
         <h2 class="section-title">
           <span class="section-title-icon icon-blue">🎁</span>
@@ -124,10 +153,10 @@
         <div class="skeleton skeleton-card"></div>
         <div class="skeleton skeleton-card"></div>
       </div>
-    </section>
+    </div>
 
-    <!-- ─── GitHub Trending ─── -->
-    <section class="section">
+    <!-- TRENDING -->
+    <div class="tab-panel" id="panel-trending" role="tabpanel">
       <div class="section-header">
         <h2 class="section-title">
           <span class="section-title-icon icon-green" style="background:rgba(16,185,129,0.2)">📈</span>
@@ -136,23 +165,20 @@
         <span id="trending-status"></span>
       </div>
       <div class="trending-list" id="trending-list">
-        <!-- Loading state -->
         <div class="skeleton" style="height:64px;border-radius:12px;"></div>
         <div class="skeleton" style="height:64px;border-radius:12px;"></div>
         <div class="skeleton" style="height:64px;border-radius:12px;"></div>
       </div>
-    </section>
+    </div>
 
-    <!-- ─── Explore All ─── -->
-    <section class="section">
+    <!-- EXPLORE -->
+    <div class="tab-panel" id="panel-explore" role="tabpanel">
       <div class="section-header">
         <h2 class="section-title">
           <span class="section-title-icon icon-teal">🔍</span>
           Explore All Content
         </h2>
       </div>
-
-      <!-- Filters -->
       <div class="filters-bar">
         <div class="search-wrapper">
           <span class="search-icon">🔍</span>
@@ -174,16 +200,15 @@
           <button class="pill" data-cat="concept"><span class="dot dot-concept"></span>Concepts</button>
         </div>
       </div>
-
       <div class="cards-grid" id="all-cards-grid">
         <div class="skeleton skeleton-card"></div>
         <div class="skeleton skeleton-card"></div>
         <div class="skeleton skeleton-card"></div>
       </div>
-    </section>
+    </div>
 
-    <!-- ─── Progress ─── -->
-    <section class="section">
+    <!-- PROGRESS -->
+    <div class="tab-panel" id="panel-progress" role="tabpanel">
       <div class="section-header">
         <h2 class="section-title">
           <span class="section-title-icon icon-amber">📊</span>
@@ -193,7 +218,7 @@
       <div class="progress-grid">
         <div class="progress-card">
           <div class="progress-icon">🔥</div>
-          <div class="progress-number" id="prog-streak" style="background:linear-gradient(135deg,#f59e0b,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">1</div>
+          <div class="progress-number" style="background:linear-gradient(135deg,#f59e0b,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">1</div>
           <div class="progress-label">Day Streak</div>
         </div>
         <div class="progress-card">
@@ -221,7 +246,7 @@
           <div class="progress-label">Total Resources</div>
         </div>
       </div>
-    </section>
+    </div>
 
   </div><!-- /container -->
 </main>
@@ -230,7 +255,7 @@
 <footer class="site-footer">
   <div class="container">
     <div class="footer-inner">
-      <span class="footer-text">AI Daily Hub · Built for daily AI learning · <a href="https://github.com/sunil-kalmodiya/ai-daily-hub" target="_blank" rel="noopener" style="color:var(--purple);text-decoration:none;">View Source</a></span>
+      <span class="footer-text">AI Daily Hub · Built for daily AI learning · <a href="https://github.com/skalmodiya/ai-daily-hub" target="_blank" rel="noopener" style="color:var(--purple);text-decoration:none;">View Source</a></span>
       <nav class="footer-links" aria-label="Footer links">
         <a href="https://arxiv.org/search/?searchtype=all&query=AI+agents&start=0" target="_blank" rel="noopener" class="footer-link">arXiv AI</a>
         <a href="https://github.com/trending?l=python&since=daily" target="_blank" rel="noopener" class="footer-link">GitHub Trending</a>

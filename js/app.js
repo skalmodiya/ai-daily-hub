@@ -161,6 +161,8 @@ function renderTrending(repos, isLive) {
 
   if (isLive) {
     liveEl.innerHTML = `<span class="live-indicator"><span class="live-dot"></span> Live</span>`;
+    const dot = document.getElementById('tab-live-dot');
+    if (dot) dot.classList.add('visible');
   } else {
     liveEl.innerHTML = `<span style="font-size:12px;color:var(--text-muted)">Curated</span>`;
   }
@@ -385,11 +387,34 @@ async function init() {
     }, 280);
   });
 
+  // Tab click handlers
+  document.querySelectorAll('.tab[data-tab]').forEach(tab => {
+    tab.addEventListener('click', () => switchTab(tab.dataset.tab));
+  });
+
+  // Restore tab from URL hash (e.g. #explore)
+  const hash = window.location.hash.replace('#', '');
+  const validTabs = ['today', 'bonus', 'trending', 'explore', 'progress'];
+  if (validTabs.includes(hash)) switchTab(hash);
+
   // Share button
   document.getElementById('share-btn').addEventListener('click', shareApp);
 
   // Update stats after load
   updateProgressUI(state);
+}
+
+// ─── Tab switching ────────────────────────────────────
+function switchTab(tabId) {
+  document.querySelectorAll('.tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.tab === tabId);
+    t.setAttribute('aria-selected', t.dataset.tab === tabId);
+  });
+  document.querySelectorAll('.tab-panel').forEach(p => {
+    p.classList.toggle('active', p.id === `panel-${tabId}`);
+  });
+  // Persist active tab in URL hash without scrolling
+  history.replaceState(null, '', `#${tabId}`);
 }
 
 document.addEventListener('DOMContentLoaded', init);

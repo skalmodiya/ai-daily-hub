@@ -761,6 +761,10 @@ body {
   .toast { left: 16px; right: 16px; bottom: 16px; }
   .footer-inner { justify-content: center; text-align: center; }
   .section-header { flex-direction: column; align-items: flex-start; }
+  .tab-bar-wrap { top: 61px; margin-left: -16px; margin-right: -16px; padding-left: 16px; padding-right: 16px; }
+  .tab { padding: 8px 12px; font-size: 13px; }
+  .tab-label { display: none; }
+  .tab-icon { font-size: 18px; }
 }
 
 @media (max-width: 480px) {
@@ -769,6 +773,92 @@ body {
   .progress-grid { grid-template-columns: 1fr; }
   .stats-row { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ─── Tab Bar ─── */
+.tab-bar-wrap {
+  position: sticky;
+  top: 69px;
+  z-index: 90;
+  margin-bottom: 32px;
+  padding: 12px 0;
+  backdrop-filter: blur(20px) saturate(1.5);
+  background: rgba(10, 10, 15, 0.75);
+  border-bottom: 1px solid var(--border);
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.tab-bar {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.tab-bar::-webkit-scrollbar { display: none; }
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-muted);
+  white-space: nowrap;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+}
+
+.tab:hover {
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border-color: var(--border);
+}
+
+.tab.active {
+  background: rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.35);
+  color: var(--purple);
+  font-weight: 600;
+}
+
+.tab-icon { font-size: 16px; line-height: 1; }
+
+.tab-badge {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: rgba(139, 92, 246, 0.25);
+  color: var(--purple);
+  padding: 2px 7px;
+  border-radius: 50px;
+}
+
+.tab-live {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  display: none;
+  animation: ping 2s ease-in-out infinite;
+}
+.tab-live.visible { display: inline-block; }
+
+/* ─── Tab Panels ─── */
+.tab-panel {
+  display: none;
+  animation: fadeInUp 0.25s ease both;
+}
+.tab-panel.active { display: block; }
 
 /* ─── Scrollbar ─── */
 ::-webkit-scrollbar { width: 6px; }
