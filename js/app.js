@@ -115,26 +115,28 @@ function renderCard(item, state, opts = {}) {
   return `
     <article class="${classes}" data-id="${item.id}" data-cat="${item.category}">
       ${dailyLabel}
-      <div class="card-header">
-        <div class="card-emoji-wrap">${item.emoji || '🤖'}</div>
-        <div class="card-meta">
-          <span class="card-category">${CATEGORY_LABELS[item.category] || item.category}</span>
+      <div class="card-inner">
+        <div class="card-header">
+          <div class="card-emoji-wrap">${item.emoji || '🤖'}</div>
+          <div class="card-meta">
+            <span class="card-category">${CATEGORY_LABELS[item.category] || item.category}</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-icon learned-btn ${learned ? 'active' : ''}" data-id="${item.id}" title="${learned ? 'Mark unlearned' : 'Mark as learned'}">
+              ${learned ? '✅' : '○'}
+            </button>
+          </div>
         </div>
-        <div class="card-actions">
-          <button class="btn-icon learned-btn ${learned ? 'active' : ''}" data-id="${item.id}" title="${learned ? 'Mark unlearned' : 'Mark as learned'}">
-            ${learned ? '✅' : '○'}
-          </button>
+        <h3 class="card-title">${escHtml(item.title)}</h3>
+        <p class="card-desc">${escHtml(item.description)}</p>
+        ${tags ? `<div class="card-tags">${tags}</div>` : ''}
+        <div class="card-footer">
+          <span class="difficulty-badge diff-${item.difficulty}">${item.difficulty}</span>
+          ${stars}
+          <a class="card-link" href="${item.url}" target="_blank" rel="noopener noreferrer">
+            Explore →
+          </a>
         </div>
-      </div>
-      <h3 class="card-title">${escHtml(item.title)}</h3>
-      <p class="card-desc">${escHtml(item.description)}</p>
-      ${tags ? `<div class="card-tags">${tags}</div>` : ''}
-      <div class="card-footer">
-        <span class="difficulty-badge diff-${item.difficulty}">${item.difficulty}</span>
-        ${stars}
-        <a class="card-link" href="${item.url}" target="_blank" rel="noopener noreferrer">
-          Explore →
-        </a>
       </div>
     </article>`;
 }
