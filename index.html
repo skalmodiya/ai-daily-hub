@@ -158,12 +158,37 @@
          SECTION 3 — TRENDING
     ═══════════════════════════════════════ -->
     <section class="page-section" id="section-trending">
-      <div class="section-header">
-        <h2 class="section-title">
-          <span class="section-title-icon" style="background:rgba(16,185,129,0.2)">📈</span>
-          AI Repos Trending on GitHub
-        </h2>
-        <span id="trending-status"></span>
+      <div class="section-header" style="flex-direction:column;align-items:stretch;gap:12px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+          <h2 class="section-title">
+            <span class="section-title-icon" style="background:rgba(16,185,129,0.2)">📈</span>
+            AI Repos Trending on GitHub
+          </h2>
+          <div class="trending-controls">
+            <span id="trending-status"></span>
+            <div class="select-wrap" id="count-wrap">
+              <label for="trending-count" class="select-label">Show</label>
+              <select id="trending-count" class="styled-select">
+                <option value="10" selected>10 repos</option>
+                <option value="20">20 repos</option>
+                <option value="30">30 repos</option>
+                <option value="40">40 repos</option>
+                <option value="50">50 repos</option>
+                <option value="60">60 repos</option>
+                <option value="70">70 repos</option>
+                <option value="80">80 repos</option>
+                <option value="90">90 repos</option>
+                <option value="100">100 repos</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="trending-tab-bar" role="tablist" aria-label="Trending views">
+          <button class="trending-tab active" data-tview="trending" role="tab">🔥 GitHub Trending</button>
+          <button class="trending-tab" data-tview="stars" role="tab">⭐ Most Stars</button>
+          <button class="trending-tab" data-tview="rising" role="tab">🚀 New &amp; Rising</button>
+          <button class="trending-tab" data-tview="category" role="tab">🏷️ By Category</button>
+        </div>
       </div>
       <div class="trending-list" id="trending-list">
         <div class="skeleton" style="height:64px;border-radius:12px;"></div>
