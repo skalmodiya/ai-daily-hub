@@ -419,6 +419,7 @@ body {
   mask-composite: exclude;
   opacity: 0;
   transition: opacity var(--transition);
+  pointer-events: none;
 }
 
 .card:hover {
