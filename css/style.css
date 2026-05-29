@@ -234,6 +234,16 @@ body {
   font-size: 13px;
 }
 
+#refresh-btn {
+  border-color: rgba(20, 184, 166, 0.4);
+  color: var(--teal);
+}
+#refresh-btn:hover {
+  background: rgba(20, 184, 166, 0.12);
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
 .btn-primary {
   background: linear-gradient(135deg, var(--purple), var(--blue));
   color: white;

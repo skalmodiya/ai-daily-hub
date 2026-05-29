@@ -514,10 +514,17 @@ async function init() {
   saveState(state);
   updateProgressUI(state);
 
-  // Load content
+  // Clear trending cache if it's from a previous day
+  const cachedDay = sessionStorage.getItem('ai-trending-date');
+  if (cachedDay !== getTodayString()) {
+    sessionStorage.removeItem(TRENDING_CACHE_KEY);
+    sessionStorage.setItem('ai-trending-date', getTodayString());
+  }
+
+  // Load content — cache-bust with daily version so browser always fetches today's file
   let items = [];
   try {
-    const res = await fetch('./data/content.json');
+    const res = await fetch(`./data/content.json?v=${getDailySeed()}`, { cache: 'no-cache' });
     items = await res.json();
   } catch (e) {
     document.getElementById('daily-grid').innerHTML = '<div class="empty-state" style="grid-column:1/-1"><div class="empty-icon">⚠️</div><h3>Could not load content</h3><p>Please refresh or try again.</p></div>';
@@ -614,6 +621,14 @@ async function init() {
   document.getElementById('trending-count').addEventListener('change', e => {
     trendingCount = parseInt(e.target.value, 10);
     renderTrendingList();
+  });
+
+  // Refresh button — clears all caches and hard-reloads
+  document.getElementById('refresh-btn').addEventListener('click', () => {
+    sessionStorage.removeItem(TRENDING_CACHE_KEY);
+    sessionStorage.removeItem('ai-trending-date');
+    showToast('↻ Refreshing content…');
+    setTimeout(() => location.reload(true), 600);
   });
 
   // Share button
