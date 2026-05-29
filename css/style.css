@@ -684,15 +684,33 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  width: 100%;
   font-size: 12px;
   font-weight: 700;
   color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  padding: 10px 0 8px;
-  margin-bottom: 8px;
+  padding: 10px 12px 10px 0;
+  margin-bottom: 0;
+  border: none;
   border-bottom: 1px solid var(--border);
+  background: none;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--transition);
 }
+.trending-category-heading:hover { color: var(--text-primary); }
+.trending-category-heading.open { color: var(--purple); border-bottom-color: var(--purple); }
+
+.cat-chevron {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--text-muted);
+}
+.trending-category-heading.open .cat-chevron { color: var(--purple); }
+
+.trending-cat-body { padding-top: 8px; margin-bottom: 8px; }
 
 .trending-cat-count {
   margin-left: auto;
