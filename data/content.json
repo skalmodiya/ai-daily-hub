@@ -1,0 +1,1068 @@
+[
+  {
+    "id": "langchain-001",
+    "category": "framework",
+    "title": "LangChain Expression Language (LCEL)",
+    "description": "LCEL is LangChain's composable way to build chains. It supports streaming, async execution, parallel branches, and automatic retries — all with a clean pipe syntax.",
+    "url": "https://python.langchain.com/docs/expression_language/",
+    "tags": ["langchain", "python", "chains", "streaming"],
+    "difficulty": "intermediate",
+    "emoji": "🔗"
+  },
+  {
+    "id": "langchain-002",
+    "category": "framework",
+    "title": "LangGraph: Stateful Multi-Actor Applications",
+    "description": "LangGraph extends LangChain to build cyclic, stateful graphs of LLM calls. Perfect for agents that need to loop, backtrack, or coordinate multiple actors.",
+    "url": "https://langchain-ai.github.io/langgraph/",
+    "tags": ["langchain", "langgraph", "agents", "stateful"],
+    "difficulty": "advanced",
+    "emoji": "🕸️"
+  },
+  {
+    "id": "llamaindex-001",
+    "category": "framework",
+    "title": "LlamaIndex: Data Framework for LLM Apps",
+    "description": "LlamaIndex provides tools to ingest, structure, and access private or domain-specific data for LLMs. Excellent for RAG pipelines and knowledge bases.",
+    "url": "https://docs.llamaindex.ai/en/stable/",
+    "tags": ["llamaindex", "rag", "python", "indexing"],
+    "difficulty": "intermediate",
+    "emoji": "🦙"
+  },
+  {
+    "id": "llamaindex-002",
+    "category": "framework",
+    "title": "LlamaIndex Workflows",
+    "description": "LlamaIndex Workflows is an event-driven orchestration framework for building complex agentic systems with steps, branching, and streaming.",
+    "url": "https://docs.llamaindex.ai/en/stable/understanding/workflows/",
+    "tags": ["llamaindex", "workflows", "agents", "orchestration"],
+    "difficulty": "advanced",
+    "emoji": "⚡"
+  },
+  {
+    "id": "autogen-001",
+    "category": "framework",
+    "title": "AutoGen: Multi-Agent Conversation Framework",
+    "description": "Microsoft AutoGen enables building LLM applications with multiple conversable agents that collaborate to solve tasks. Supports human-in-the-loop and fully autonomous modes.",
+    "url": "https://microsoft.github.io/autogen/",
+    "tags": ["autogen", "microsoft", "multi-agent", "python"],
+    "difficulty": "intermediate",
+    "emoji": "🤖"
+  },
+  {
+    "id": "autogen-002",
+    "category": "framework",
+    "title": "AutoGen AgentChat API",
+    "description": "AutoGen 0.4's new AgentChat API provides a high-level interface for building teams of agents with configurable termination conditions, message routing, and tool integration.",
+    "url": "https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/",
+    "tags": ["autogen", "agentchat", "teams", "python"],
+    "difficulty": "intermediate",
+    "emoji": "💬"
+  },
+  {
+    "id": "crewai-001",
+    "category": "framework",
+    "title": "CrewAI: Role-Based Agent Crews",
+    "description": "CrewAI lets you define agents with specific roles, goals, and backstories, then organize them into crews that collaborate on complex tasks with tool use and delegation.",
+    "url": "https://docs.crewai.com/",
+    "tags": ["crewai", "roles", "multi-agent", "python"],
+    "difficulty": "intermediate",
+    "emoji": "👥"
+  },
+  {
+    "id": "crewai-002",
+    "category": "framework",
+    "title": "CrewAI Flows: Event-Driven Pipelines",
+    "description": "CrewAI Flows adds structured event-driven pipelines on top of crews, allowing you to mix AI agents with deterministic Python code and conditional routing.",
+    "url": "https://docs.crewai.com/concepts/flows",
+    "tags": ["crewai", "flows", "pipelines", "events"],
+    "difficulty": "advanced",
+    "emoji": "🌊"
+  },
+  {
+    "id": "dspy-001",
+    "category": "framework",
+    "title": "DSPy: Programming Language Model Pipelines",
+    "description": "DSPy replaces manual prompt engineering with a programming model. You define signatures and modules, then DSPy optimizes the prompts automatically using your data.",
+    "url": "https://dspy-docs.vercel.app/",
+    "tags": ["dspy", "prompt-optimization", "python", "stanford"],
+    "difficulty": "advanced",
+    "emoji": "🎓"
+  },
+  {
+    "id": "haystack-001",
+    "category": "framework",
+    "title": "Haystack: Production-Ready NLP Pipelines",
+    "description": "Haystack by deepset is an open-source framework for building end-to-end NLP pipelines including search, question answering, and agentic applications at production scale.",
+    "url": "https://docs.haystack.deepset.ai/docs/intro",
+    "tags": ["haystack", "deepset", "nlp", "production"],
+    "difficulty": "intermediate",
+    "emoji": "🌾"
+  },
+  {
+    "id": "semantic-kernel-001",
+    "category": "framework",
+    "title": "Semantic Kernel: Microsoft's AI SDK",
+    "description": "Semantic Kernel is Microsoft's SDK for integrating LLMs into .NET, Python, and Java applications. It provides plugins, planners, and memory abstractions for enterprise AI.",
+    "url": "https://learn.microsoft.com/en-us/semantic-kernel/overview/",
+    "tags": ["semantic-kernel", "microsoft", "dotnet", "enterprise"],
+    "difficulty": "intermediate",
+    "emoji": "🔮"
+  },
+  {
+    "id": "ollama-001",
+    "category": "framework",
+    "title": "Ollama: Run LLMs Locally",
+    "description": "Ollama makes it trivial to run LLMs locally — Llama 3, Mistral, Phi, Gemma and more. One command to pull and run any model, with an OpenAI-compatible API.",
+    "url": "https://ollama.com/",
+    "tags": ["ollama", "local-llm", "privacy", "open-source"],
+    "difficulty": "beginner",
+    "emoji": "🏠"
+  },
+  {
+    "id": "pydantic-ai-001",
+    "category": "framework",
+    "title": "PydanticAI: Type-Safe Agent Framework",
+    "description": "PydanticAI brings Pydantic's type-safety to AI agents. Define agents with typed dependencies and outputs, swap model providers at will, and get structured responses by default.",
+    "url": "https://ai.pydantic.dev/",
+    "tags": ["pydantic", "type-safety", "python", "structured-output"],
+    "difficulty": "intermediate",
+    "emoji": "✅"
+  },
+  {
+    "id": "openai-swarm-001",
+    "category": "framework",
+    "title": "OpenAI Swarm: Lightweight Multi-Agent",
+    "description": "Swarm is OpenAI's experimental educational framework for multi-agent orchestration using handoffs and routines — lightweight, no state management, great for learning agent patterns.",
+    "url": "https://github.com/openai/swarm",
+    "tags": ["openai", "swarm", "multi-agent", "handoffs"],
+    "difficulty": "beginner",
+    "emoji": "🐝"
+  },
+  {
+    "id": "phidata-001",
+    "category": "framework",
+    "title": "Agno (formerly Phidata): Full-Stack Agent Framework",
+    "description": "Agno (Phidata) provides agents with memory, knowledge, tools, and reasoning out of the box. Build production agents with a PostgreSQL knowledge base and web UI in minutes.",
+    "url": "https://docs.agno.com/",
+    "tags": ["agno", "phidata", "memory", "knowledge-base"],
+    "difficulty": "intermediate",
+    "emoji": "🧠"
+  },
+  {
+    "id": "smolagents-001",
+    "category": "framework",
+    "title": "smolagents: Minimal Agents by HuggingFace",
+    "description": "Hugging Face's smolagents is a minimalist agent library where agents write and execute Python code instead of just calling tools — enabling more expressive reasoning.",
+    "url": "https://huggingface.co/docs/smolagents/en/index",
+    "tags": ["huggingface", "smolagents", "code-agents", "minimal"],
+    "difficulty": "beginner",
+    "emoji": "🤗"
+  },
+  {
+    "id": "agent-react-001",
+    "category": "agent",
+    "title": "ReAct: Reason + Act Agent Pattern",
+    "description": "ReAct is the foundational agent pattern: the model reasons (Thought), takes an action (Act), observes the result (Observe), and repeats. Most modern agents are built on this loop.",
+    "url": "https://arxiv.org/abs/2210.03629",
+    "tags": ["react", "pattern", "reasoning", "tool-use"],
+    "difficulty": "beginner",
+    "emoji": "🔄"
+  },
+  {
+    "id": "agent-plan-execute-001",
+    "category": "agent",
+    "title": "Plan-and-Execute Agent Pattern",
+    "description": "Instead of deciding actions one step at a time, a Plan-and-Execute agent first generates a full task plan, then executes each step — better for long-horizon tasks.",
+    "url": "https://blog.langchain.dev/planning-agents/",
+    "tags": ["plan-execute", "pattern", "long-horizon", "planner"],
+    "difficulty": "intermediate",
+    "emoji": "📋"
+  },
+  {
+    "id": "agent-memory-001",
+    "category": "agent",
+    "title": "Agent Memory: In-Context vs External",
+    "description": "Agents can use in-context memory (conversation history), external memory (vector stores), episodic memory (past conversations), or semantic memory (knowledge base). Each has different trade-offs.",
+    "url": "https://lilianweng.github.io/posts/2023-06-23-agent/",
+    "tags": ["memory", "vector-store", "episodic", "semantic"],
+    "difficulty": "intermediate",
+    "emoji": "💾"
+  },
+  {
+    "id": "agent-tools-001",
+    "category": "agent",
+    "title": "Tool Use: How Agents Interact With the World",
+    "description": "Tools (function calling) let agents interact with APIs, databases, file systems, and browsers. Learn how to design reliable tools with proper schemas and error handling.",
+    "url": "https://platform.openai.com/docs/guides/function-calling",
+    "tags": ["tools", "function-calling", "api", "integration"],
+    "difficulty": "beginner",
+    "emoji": "🔧"
+  },
+  {
+    "id": "agent-rag-001",
+    "category": "agent",
+    "title": "Agentic RAG: Beyond Simple Retrieval",
+    "description": "Agentic RAG goes beyond single-shot retrieval — agents decide when and what to retrieve, can rewrite queries, validate results, and synthesize from multiple sources.",
+    "url": "https://docs.llamaindex.ai/en/stable/use_cases/agents/",
+    "tags": ["rag", "retrieval", "agents", "advanced-rag"],
+    "difficulty": "intermediate",
+    "emoji": "🔍"
+  },
+  {
+    "id": "agent-multiagent-001",
+    "category": "agent",
+    "title": "Multi-Agent Systems: Coordination Patterns",
+    "description": "Multi-agent systems can use supervisor patterns (one agent routes to specialists), peer-to-peer (agents talk directly), or blackboard (shared memory) coordination patterns.",
+    "url": "https://langchain-ai.github.io/langgraph/concepts/multi_agent/",
+    "tags": ["multi-agent", "coordination", "supervisor", "patterns"],
+    "difficulty": "advanced",
+    "emoji": "🌐"
+  },
+  {
+    "id": "agent-eval-001",
+    "category": "agent",
+    "title": "Evaluating AI Agents: Beyond Accuracy",
+    "description": "Agent evaluation requires measuring task completion, tool call efficiency, hallucination rates, and trajectory quality — not just final answer accuracy.",
+    "url": "https://www.langchain.com/langsmith",
+    "tags": ["evaluation", "testing", "metrics", "langsmith"],
+    "difficulty": "intermediate",
+    "emoji": "📊"
+  },
+  {
+    "id": "agent-computer-use-001",
+    "category": "agent",
+    "title": "Computer Use: Agents That Control Your Screen",
+    "description": "Anthropic's Computer Use capability lets Claude see and interact with a computer's screen, keyboard, and mouse — enabling agents to automate any GUI-based task.",
+    "url": "https://docs.anthropic.com/en/docs/agents-and-tools/computer-use",
+    "tags": ["computer-use", "gui", "anthropic", "automation"],
+    "difficulty": "advanced",
+    "emoji": "🖥️"
+  },
+  {
+    "id": "agent-mcp-001",
+    "category": "agent",
+    "title": "Model Context Protocol (MCP)",
+    "description": "MCP is Anthropic's open standard for connecting AI models to external tools and data sources. Any MCP-compatible client can connect to any MCP server without custom integrations.",
+    "url": "https://modelcontextprotocol.io/",
+    "tags": ["mcp", "protocol", "tools", "anthropic", "standard"],
+    "difficulty": "intermediate",
+    "emoji": "🔌"
+  },
+  {
+    "id": "agent-structured-001",
+    "category": "agent",
+    "title": "Structured Output: Making LLMs Reliable",
+    "description": "Structured outputs (JSON mode, constrained decoding) ensure LLMs return parseable data. Critical for production agents that need to reliably extract fields and call functions.",
+    "url": "https://platform.openai.com/docs/guides/structured-outputs",
+    "tags": ["structured-output", "json-mode", "reliability", "parsing"],
+    "difficulty": "beginner",
+    "emoji": "📐"
+  },
+  {
+    "id": "agent-graph-001",
+    "category": "agent",
+    "title": "Graph-Based Agent Orchestration",
+    "description": "Graph-based orchestration (LangGraph, LlamaIndex Workflows) models agent flows as directed graphs with nodes and edges — enabling loops, conditional branching, and parallel execution.",
+    "url": "https://langchain-ai.github.io/langgraph/concepts/low_level/",
+    "tags": ["graph", "orchestration", "dag", "workflows"],
+    "difficulty": "advanced",
+    "emoji": "📈"
+  },
+  {
+    "id": "sap-ai-core-001",
+    "category": "sap-ai",
+    "title": "SAP AI Core: Enterprise AI Foundation",
+    "description": "SAP AI Core is the runtime for deploying and operating AI models in the SAP ecosystem. It handles model hosting, scaling, and lifecycle management on BTP.",
+    "url": "https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/what-is-sap-ai-core",
+    "tags": ["sap", "ai-core", "btp", "deployment"],
+    "difficulty": "intermediate",
+    "emoji": "🏢"
+  },
+  {
+    "id": "sap-joule-001",
+    "category": "sap-ai",
+    "title": "SAP Joule: Copilot Across SAP Products",
+    "description": "Joule is SAP's AI copilot embedded across SAP S/4HANA, SuccessFactors, and BTP. It understands SAP business context and can proactively suggest actions.",
+    "url": "https://www.sap.com/products/artificial-intelligence/ai-assistant.html",
+    "tags": ["joule", "copilot", "s4hana", "successfactors"],
+    "difficulty": "beginner",
+    "emoji": "⚡"
+  },
+  {
+    "id": "sap-ai-launchpad-001",
+    "category": "sap-ai",
+    "title": "SAP AI Launchpad: Manage Your AI Models",
+    "description": "SAP AI Launchpad is a multitenant app on BTP for managing AI models, datasets, and scenarios across SAP AI Core. It's the control plane for your enterprise AI workflows.",
+    "url": "https://help.sap.com/docs/ai-launchpad",
+    "tags": ["sap", "ai-launchpad", "mlops", "management"],
+    "difficulty": "intermediate",
+    "emoji": "🚀"
+  },
+  {
+    "id": "sap-hana-vector-001",
+    "category": "sap-ai",
+    "title": "SAP HANA Cloud Vector Engine",
+    "description": "SAP HANA Cloud now supports vector storage and similarity search natively. Store embeddings alongside your business data and build RAG applications directly on HANA.",
+    "url": "https://help.sap.com/docs/hana-cloud/sap-hana-cloud-vector-engine-guide/sap-hana-cloud-vector-engine-guide",
+    "tags": ["hana", "vector", "embeddings", "rag", "database"],
+    "difficulty": "intermediate",
+    "emoji": "🗃️"
+  },
+  {
+    "id": "sap-generative-hub-001",
+    "category": "sap-ai",
+    "title": "SAP Generative AI Hub",
+    "description": "SAP Generative AI Hub provides access to foundation models (GPT-4, Gemini, Claude, and more) through a unified API on BTP — with governance, cost tracking, and prompt management.",
+    "url": "https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/generative-ai-hub-in-sap-ai-core",
+    "tags": ["sap", "generative-ai", "foundation-models", "btp"],
+    "difficulty": "intermediate",
+    "emoji": "🌐"
+  },
+  {
+    "id": "sap-btp-ai-001",
+    "category": "sap-ai",
+    "title": "AI Services on SAP BTP",
+    "description": "SAP BTP offers ready-to-use AI services: Document Information Extraction, Business Entity Recognition, Document Classification, and more — all accessible via REST APIs.",
+    "url": "https://discovery-center.cloud.sap/index.html#/viewServices?category=ArtificialIntelligence",
+    "tags": ["btp", "ai-services", "document-extraction", "ready-to-use"],
+    "difficulty": "beginner",
+    "emoji": "📄"
+  },
+  {
+    "id": "sap-build-ai-001",
+    "category": "sap-ai",
+    "title": "SAP Build: Low-Code AI App Development",
+    "description": "SAP Build Apps includes AI-powered app generation, process automation with AI decisions, and integration with Joule — enabling citizen developers to build AI-infused apps.",
+    "url": "https://www.sap.com/products/technology-platform/low-code.html",
+    "tags": ["sap-build", "low-code", "citizen-developer", "automation"],
+    "difficulty": "beginner",
+    "emoji": "🏗️"
+  },
+  {
+    "id": "sap-datasphere-ai-001",
+    "category": "sap-ai",
+    "title": "SAP Datasphere + AI: Business Data Fabric",
+    "description": "SAP Datasphere connects business data across landscapes and integrates with SAP AI Core to serve that data to LLM pipelines — enabling grounded, enterprise-aware AI.",
+    "url": "https://www.sap.com/products/technology-platform/datasphere.html",
+    "tags": ["datasphere", "data-fabric", "business-data", "integration"],
+    "difficulty": "intermediate",
+    "emoji": "🕸️"
+  },
+  {
+    "id": "sap-cwm-ai-001",
+    "category": "sap-ai",
+    "title": "AI-Driven Order Management in SAP S/4HANA",
+    "description": "SAP S/4HANA embeds AI for intelligent order promising, delivery prediction, and exception management — learn how AI is reshaping supply chain processes.",
+    "url": "https://www.sap.com/products/erp/s4hana.html",
+    "tags": ["s4hana", "supply-chain", "order-management", "embedded-ai"],
+    "difficulty": "intermediate",
+    "emoji": "📦"
+  },
+  {
+    "id": "sap-successfactors-ai-001",
+    "category": "sap-ai",
+    "title": "AI in SAP SuccessFactors: Talent Intelligence",
+    "description": "SuccessFactors uses AI for talent matching, skill gap analysis, and learning recommendations. Joule in SuccessFactors handles HR queries in natural language.",
+    "url": "https://www.sap.com/products/hcm/what-is-human-capital-management.html",
+    "tags": ["successfactors", "hr-ai", "talent", "joule"],
+    "difficulty": "beginner",
+    "emoji": "👔"
+  },
+  {
+    "id": "sap-procure-ai-001",
+    "category": "sap-ai",
+    "title": "AI in SAP Ariba: Smart Procurement",
+    "description": "SAP Ariba uses AI for supplier recommendation, contract anomaly detection, spend classification, and guided buying — transforming the procurement lifecycle.",
+    "url": "https://www.sap.com/products/spend-management/ariba-network.html",
+    "tags": ["ariba", "procurement", "supplier", "spend-management"],
+    "difficulty": "beginner",
+    "emoji": "🛒"
+  },
+  {
+    "id": "sap-customer-experience-ai-001",
+    "category": "sap-ai",
+    "title": "AI in SAP CX: Personalization at Scale",
+    "description": "SAP Customer Experience leverages AI for next-best-action recommendations, churn prediction, personalized product discovery, and automated customer service with Joule.",
+    "url": "https://www.sap.com/products/crm.html",
+    "tags": ["sap-cx", "personalization", "customer-service", "recommendations"],
+    "difficulty": "beginner",
+    "emoji": "🎯"
+  },
+  {
+    "id": "sap-abap-ai-001",
+    "category": "sap-ai",
+    "title": "ABAP Development with AI: Joule for Developers",
+    "description": "Joule in ABAP Development Tools (ADT) can generate ABAP code, explain legacy code, suggest refactors, and write unit tests — dramatically speeding up SAP development.",
+    "url": "https://help.sap.com/docs/abap-cloud/abap-development-tools-user-guide/joule-for-abap-developer",
+    "tags": ["abap", "joule", "code-generation", "developers"],
+    "difficulty": "intermediate",
+    "emoji": "💻"
+  },
+  {
+    "id": "paper-chain-of-thought-001",
+    "category": "paper",
+    "title": "Chain-of-Thought Prompting",
+    "description": "Wei et al. (2022) showed that prompting LLMs to reason step-by-step (chain-of-thought) dramatically improves performance on math, reasoning, and code — the foundational technique behind modern prompting.",
+    "url": "https://arxiv.org/abs/2201.11903",
+    "tags": ["cot", "reasoning", "prompting", "google-brain"],
+    "difficulty": "beginner",
+    "emoji": "🧩"
+  },
+  {
+    "id": "paper-rag-001",
+    "category": "paper",
+    "title": "Retrieval-Augmented Generation (RAG)",
+    "description": "The original RAG paper by Lewis et al. (2020, Meta) combines dense retrieval with seq2seq generation. This paper launched the RAG paradigm now ubiquitous in production LLM systems.",
+    "url": "https://arxiv.org/abs/2005.11401",
+    "tags": ["rag", "retrieval", "generation", "meta", "foundational"],
+    "difficulty": "intermediate",
+    "emoji": "📚"
+  },
+  {
+    "id": "paper-agents-survey-001",
+    "category": "paper",
+    "title": "A Survey on LLM-Based Autonomous Agents",
+    "description": "Wang et al. (2023) provide a comprehensive survey of LLM-based agents covering architecture (planning, memory, tools), applications, and evaluation — essential reading for anyone building agents.",
+    "url": "https://arxiv.org/abs/2308.11432",
+    "tags": ["survey", "agents", "architecture", "planning"],
+    "difficulty": "intermediate",
+    "emoji": "📖"
+  },
+  {
+    "id": "paper-lora-001",
+    "category": "paper",
+    "title": "LoRA: Low-Rank Adaptation of LLMs",
+    "description": "Hu et al. (2021, Microsoft) introduced LoRA — fine-tuning massive LLMs by training only small low-rank matrices. Reduces trainable parameters by 10,000x while matching full fine-tuning quality.",
+    "url": "https://arxiv.org/abs/2106.09685",
+    "tags": ["lora", "fine-tuning", "peft", "efficient"],
+    "difficulty": "advanced",
+    "emoji": "🔬"
+  },
+  {
+    "id": "paper-constitutional-ai-001",
+    "category": "paper",
+    "title": "Constitutional AI: Harmlessness from AI Feedback",
+    "description": "Anthropic's Constitutional AI (CAI) trains helpful, harmless models using AI-generated feedback against a written constitution — the technique behind Claude's safety alignment.",
+    "url": "https://arxiv.org/abs/2212.08073",
+    "tags": ["constitutional-ai", "alignment", "anthropic", "safety"],
+    "difficulty": "advanced",
+    "emoji": "⚖️"
+  },
+  {
+    "id": "paper-toolformer-001",
+    "category": "paper",
+    "title": "Toolformer: Language Models That Teach Themselves to Use Tools",
+    "description": "Toolformer (Meta, 2023) shows LLMs can learn when and how to call external APIs (calculator, search, calendar) self-supervised — no human annotation needed.",
+    "url": "https://arxiv.org/abs/2302.04761",
+    "tags": ["toolformer", "tools", "self-supervised", "meta"],
+    "difficulty": "advanced",
+    "emoji": "🛠️"
+  },
+  {
+    "id": "paper-self-refine-001",
+    "category": "paper",
+    "title": "Self-Refine: Iterative Refinement with LLMs",
+    "description": "Self-Refine (2023) shows that LLMs can iteratively improve their own outputs by generating feedback on their output and then refining based on that feedback — no extra training needed.",
+    "url": "https://arxiv.org/abs/2303.17651",
+    "tags": ["self-refine", "refinement", "feedback", "iteration"],
+    "difficulty": "intermediate",
+    "emoji": "♻️"
+  },
+  {
+    "id": "paper-tree-of-thought-001",
+    "category": "paper",
+    "title": "Tree of Thoughts: Deliberate Problem Solving",
+    "description": "Tree of Thoughts (Princeton/DeepMind, 2023) extends chain-of-thought to a tree structure where LLMs can explore multiple reasoning paths and backtrack — dramatically improving complex problem solving.",
+    "url": "https://arxiv.org/abs/2305.10601",
+    "tags": ["tree-of-thoughts", "reasoning", "search", "deliberate"],
+    "difficulty": "advanced",
+    "emoji": "🌳"
+  },
+  {
+    "id": "paper-attention-001",
+    "category": "paper",
+    "title": "Attention Is All You Need (Transformer Paper)",
+    "description": "The original transformer paper by Vaswani et al. (Google, 2017) introduced self-attention and positional encoding — the foundational architecture behind all modern LLMs.",
+    "url": "https://arxiv.org/abs/1706.03762",
+    "tags": ["transformer", "attention", "foundational", "architecture"],
+    "difficulty": "advanced",
+    "emoji": "🏛️"
+  },
+  {
+    "id": "paper-mixtral-001",
+    "category": "paper",
+    "title": "Mixtral of Experts: Sparse MoE LLMs",
+    "description": "Mixtral 8x7B (Mistral AI, 2024) uses sparse Mixture of Experts — each token only activates 2 of 8 expert sub-networks, achieving GPT-3.5 quality at 3x the inference speed.",
+    "url": "https://arxiv.org/abs/2401.04088",
+    "tags": ["mixtral", "moe", "efficient", "mistral"],
+    "difficulty": "advanced",
+    "emoji": "🧪"
+  },
+  {
+    "id": "paper-rlhf-001",
+    "category": "paper",
+    "title": "InstructGPT: Training LLMs to Follow Instructions",
+    "description": "OpenAI's InstructGPT (2022) introduced RLHF (Reinforcement Learning from Human Feedback) for instruction following — the key technique behind ChatGPT's conversational quality.",
+    "url": "https://arxiv.org/abs/2203.02155",
+    "tags": ["rlhf", "instruction-following", "openai", "alignment"],
+    "difficulty": "advanced",
+    "emoji": "🎯"
+  },
+  {
+    "id": "repo-openai-cookbook-001",
+    "category": "repo",
+    "title": "OpenAI Cookbook",
+    "description": "The official OpenAI Cookbook has hundreds of example notebooks for embeddings, fine-tuning, function calling, vision, and agentic patterns — updated with every new API feature.",
+    "url": "https://github.com/openai/openai-cookbook",
+    "tags": ["openai", "examples", "notebooks", "recipes"],
+    "difficulty": "beginner",
+    "emoji": "📓",
+    "stars": "60k+"
+  },
+  {
+    "id": "repo-awesome-llm-001",
+    "category": "repo",
+    "title": "Awesome LLM: Curated LLM Resources",
+    "description": "A massive curated list of large language model papers, frameworks, datasets, tools, and tutorials. One of the most comprehensive starting points for LLM research.",
+    "url": "https://github.com/Hannibal046/Awesome-LLM",
+    "tags": ["awesome-list", "llm", "curated", "resources"],
+    "difficulty": "beginner",
+    "emoji": "⭐",
+    "stars": "18k+"
+  },
+  {
+    "id": "repo-langchain-001",
+    "category": "repo",
+    "title": "LangChain GitHub Repository",
+    "description": "The LangChain monorepo — explore source code, open issues, community discussions, and the roadmap. A good way to track what's next for the most popular LLM framework.",
+    "url": "https://github.com/langchain-ai/langchain",
+    "tags": ["langchain", "source", "community", "framework"],
+    "difficulty": "beginner",
+    "emoji": "🔗",
+    "stars": "95k+"
+  },
+  {
+    "id": "repo-ollama-001",
+    "category": "repo",
+    "title": "Ollama: Local LLM Runner",
+    "description": "Ollama's GitHub repo — track new model additions, API changes, and community integrations. The fastest-growing project for running LLMs locally.",
+    "url": "https://github.com/ollama/ollama",
+    "tags": ["ollama", "local", "models", "inference"],
+    "difficulty": "beginner",
+    "emoji": "🏃",
+    "stars": "100k+"
+  },
+  {
+    "id": "repo-microsoft-graphrag-001",
+    "category": "repo",
+    "title": "Microsoft GraphRAG",
+    "description": "GraphRAG from Microsoft Research uses LLMs to build knowledge graphs from text and then uses those graphs for retrieval — outperforming traditional RAG on global questions.",
+    "url": "https://github.com/microsoft/graphrag",
+    "tags": ["graphrag", "knowledge-graph", "microsoft", "retrieval"],
+    "difficulty": "advanced",
+    "emoji": "🕸️",
+    "stars": "20k+"
+  },
+  {
+    "id": "repo-open-webui-001",
+    "category": "repo",
+    "title": "Open WebUI: Beautiful LLM Chat Interface",
+    "description": "Open WebUI is a feature-rich, self-hosted ChatGPT-style interface for Ollama and OpenAI-compatible APIs. Supports multi-modal, RAG, web search, and model management.",
+    "url": "https://github.com/open-webui/open-webui",
+    "tags": ["webui", "interface", "ollama", "self-hosted"],
+    "difficulty": "beginner",
+    "emoji": "💻",
+    "stars": "50k+"
+  },
+  {
+    "id": "repo-dify-001",
+    "category": "repo",
+    "title": "Dify: Open-Source LLM App Development Platform",
+    "description": "Dify is a platform for building LLM apps with a visual workflow editor, RAG pipeline builder, agent creation, and monitoring — think low-code for LLM applications.",
+    "url": "https://github.com/langgenius/dify",
+    "tags": ["dify", "low-code", "platform", "workflow"],
+    "difficulty": "beginner",
+    "emoji": "🎨",
+    "stars": "80k+"
+  },
+  {
+    "id": "repo-litellm-001",
+    "category": "repo",
+    "title": "LiteLLM: Universal LLM Gateway",
+    "description": "LiteLLM provides a single OpenAI-compatible interface to 100+ LLM providers — Anthropic, Gemini, Mistral, Ollama, Azure. Also includes a proxy server with load balancing and caching.",
+    "url": "https://github.com/BerriAI/litellm",
+    "tags": ["litellm", "gateway", "multi-provider", "proxy"],
+    "difficulty": "intermediate",
+    "emoji": "🚦",
+    "stars": "15k+"
+  },
+  {
+    "id": "repo-n8n-ai-001",
+    "category": "repo",
+    "title": "n8n: Workflow Automation with AI Nodes",
+    "description": "n8n is an open-source workflow automation tool with native AI agent nodes, LangChain integration, and 400+ service connectors — build agentic automations visually.",
+    "url": "https://github.com/n8n-io/n8n",
+    "tags": ["n8n", "automation", "workflow", "no-code"],
+    "difficulty": "beginner",
+    "emoji": "⚙️",
+    "stars": "50k+"
+  },
+  {
+    "id": "repo-vllm-001",
+    "category": "repo",
+    "title": "vLLM: High-Throughput LLM Serving",
+    "description": "vLLM uses PagedAttention to achieve 24x higher throughput than HuggingFace transformers for LLM inference. The go-to solution for production LLM serving at scale.",
+    "url": "https://github.com/vllm-project/vllm",
+    "tags": ["vllm", "serving", "inference", "performance"],
+    "difficulty": "advanced",
+    "emoji": "⚡",
+    "stars": "40k+"
+  },
+  {
+    "id": "concept-rag-001",
+    "category": "concept",
+    "title": "Retrieval-Augmented Generation (RAG) Explained",
+    "description": "RAG grounds LLM responses in retrieved documents. It splits knowledge from model weights, enables up-to-date answers, reduces hallucination, and allows private knowledge access.",
+    "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+    "tags": ["rag", "embeddings", "retrieval", "hallucination"],
+    "difficulty": "beginner",
+    "emoji": "📖"
+  },
+  {
+    "id": "concept-embeddings-001",
+    "category": "concept",
+    "title": "Text Embeddings: The Math Behind Semantic Search",
+    "description": "Embeddings convert text into dense vectors where semantic similarity = vector proximity. Learn cosine similarity, embedding models (text-embedding-3, sentence-transformers), and when to use each.",
+    "url": "https://platform.openai.com/docs/guides/embeddings",
+    "tags": ["embeddings", "vectors", "semantic-search", "cosine-similarity"],
+    "difficulty": "intermediate",
+    "emoji": "🔢"
+  },
+  {
+    "id": "concept-vector-db-001",
+    "category": "concept",
+    "title": "Vector Databases: Pinecone vs Chroma vs Weaviate vs pgvector",
+    "description": "Vector databases store and search embeddings at scale using HNSW or IVF indexes. Compare Pinecone (managed), Chroma (local), Weaviate (hybrid), and pgvector (Postgres extension).",
+    "url": "https://www.pinecone.io/learn/vector-database/",
+    "tags": ["vector-db", "pinecone", "chroma", "weaviate", "pgvector"],
+    "difficulty": "intermediate",
+    "emoji": "🗄️"
+  },
+  {
+    "id": "concept-prompt-eng-001",
+    "category": "concept",
+    "title": "Prompt Engineering: 10 Techniques That Actually Work",
+    "description": "Learn zero-shot, few-shot, chain-of-thought, role assignment, XML delimiters, output formatting, and the RISEN framework. These techniques consistently improve LLM output quality.",
+    "url": "https://www.promptingguide.ai/",
+    "tags": ["prompt-engineering", "techniques", "cot", "few-shot"],
+    "difficulty": "beginner",
+    "emoji": "✏️"
+  },
+  {
+    "id": "concept-fine-tuning-001",
+    "category": "concept",
+    "title": "Fine-Tuning vs RAG: When to Use Each",
+    "description": "Fine-tuning changes model weights for style, format, or specific knowledge. RAG provides up-to-date, attributable context at inference time. Most production systems combine both.",
+    "url": "https://platform.openai.com/docs/guides/fine-tuning",
+    "tags": ["fine-tuning", "rag", "comparison", "when-to-use"],
+    "difficulty": "intermediate",
+    "emoji": "⚖️"
+  },
+  {
+    "id": "concept-attention-001",
+    "category": "concept",
+    "title": "How Self-Attention Works (Visually Explained)",
+    "description": "Self-attention computes relationships between all tokens simultaneously using Query, Key, and Value matrices. The Illustrated Transformer remains the best visual explanation of this mechanism.",
+    "url": "https://jalammar.github.io/illustrated-transformer/",
+    "tags": ["attention", "transformer", "architecture", "visual"],
+    "difficulty": "intermediate",
+    "emoji": "👁️"
+  },
+  {
+    "id": "concept-context-window-001",
+    "category": "concept",
+    "title": "Context Windows: Why They Matter and Their Limits",
+    "description": "Context window size determines how much text an LLM can process at once. Learn about the 'lost in the middle' problem, context compression techniques, and how to architect around context limits.",
+    "url": "https://www.anthropic.com/research/in-context-learning",
+    "tags": ["context-window", "limits", "compression", "architecture"],
+    "difficulty": "intermediate",
+    "emoji": "📏"
+  },
+  {
+    "id": "concept-hallucination-001",
+    "category": "concept",
+    "title": "LLM Hallucination: Causes and Mitigations",
+    "description": "LLMs hallucinate because they generate probable tokens, not factual ones. Learn the main causes — knowledge cutoff, training data noise, overconfidence — and mitigations like RAG, grounding, and self-consistency.",
+    "url": "https://arxiv.org/abs/2311.05232",
+    "tags": ["hallucination", "reliability", "grounding", "mitigation"],
+    "difficulty": "intermediate",
+    "emoji": "👻"
+  },
+  {
+    "id": "concept-agents-vs-workflows-001",
+    "category": "concept",
+    "title": "Agents vs. Workflows: When to Use Each",
+    "description": "Workflows use pre-defined paths; agents dynamically decide what to do next. Anthropic's principle: use the simplest architecture that solves the problem — complexity adds failure modes.",
+    "url": "https://www.anthropic.com/research/building-effective-agents",
+    "tags": ["agents", "workflows", "design", "anthropic"],
+    "difficulty": "intermediate",
+    "emoji": "🤔"
+  },
+  {
+    "id": "concept-tokenization-001",
+    "category": "concept",
+    "title": "Tokenization: How LLMs See Text",
+    "description": "LLMs don't see characters or words — they see tokens (sub-word pieces). Understanding tokenization explains why LLMs struggle with counting letters, spelling, and arithmetic.",
+    "url": "https://tiktokenizer.vercel.app/",
+    "tags": ["tokenization", "bpe", "tokens", "fundamentals"],
+    "difficulty": "beginner",
+    "emoji": "🔤"
+  },
+  {
+    "id": "concept-evals-001",
+    "category": "concept",
+    "title": "LLM Evaluations: Moving Beyond Vibes",
+    "description": "Rigorous LLM evaluation uses task-specific metrics, human preference data, and adversarial benchmarks. Learn about MMLU, HumanEval, MT-Bench, and building custom eval suites.",
+    "url": "https://github.com/openai/evals",
+    "tags": ["evals", "benchmarks", "testing", "metrics"],
+    "difficulty": "intermediate",
+    "emoji": "📊"
+  },
+  {
+    "id": "concept-guardrails-001",
+    "category": "concept",
+    "title": "AI Guardrails: Building Safe LLM Applications",
+    "description": "Guardrails enforce output safety — content moderation, PII detection, topic restriction, format validation. Tools like Guardrails AI and NeMo Guardrails automate these checks.",
+    "url": "https://www.guardrailsai.com/",
+    "tags": ["guardrails", "safety", "content-moderation", "pii"],
+    "difficulty": "intermediate",
+    "emoji": "🛡️"
+  },
+  {
+    "id": "concept-multimodal-001",
+    "category": "concept",
+    "title": "Multimodal AI: Vision, Audio, and Beyond",
+    "description": "Multimodal models process text, images, audio, and video together. GPT-4V, Claude 3, and Gemini 1.5 Pro can analyze documents, charts, screenshots, and more in a single prompt.",
+    "url": "https://docs.anthropic.com/en/docs/build-with-claude/vision",
+    "tags": ["multimodal", "vision", "images", "documents"],
+    "difficulty": "beginner",
+    "emoji": "👀"
+  },
+  {
+    "id": "concept-moe-001",
+    "category": "concept",
+    "title": "Mixture of Experts (MoE): How Modern LLMs Scale",
+    "description": "MoE architectures use a router to activate only a subset of model parameters per token — enabling massive model capacity at lower inference cost. Mixtral, GPT-4, and Grok use MoE.",
+    "url": "https://huggingface.co/blog/moe",
+    "tags": ["moe", "scaling", "architecture", "efficiency"],
+    "difficulty": "advanced",
+    "emoji": "🧬"
+  },
+  {
+    "id": "repo-instructor-001",
+    "category": "repo",
+    "title": "Instructor: Structured LLM Outputs with Pydantic",
+    "description": "Instructor makes it easy to get structured data (Pydantic models) from any LLM. Handles retries, validation, and streaming with a simple decorator API.",
+    "url": "https://github.com/jxnl/instructor",
+    "tags": ["instructor", "structured-output", "pydantic", "validation"],
+    "difficulty": "beginner",
+    "emoji": "📝",
+    "stars": "10k+"
+  },
+  {
+    "id": "repo-mem0-001",
+    "category": "repo",
+    "title": "Mem0: Memory Layer for AI Agents",
+    "description": "Mem0 adds persistent, cross-session memory to LLM applications. It intelligently stores and retrieves relevant context from past interactions — enabling truly personalized AI agents.",
+    "url": "https://github.com/mem0ai/mem0",
+    "tags": ["mem0", "memory", "persistence", "personalization"],
+    "difficulty": "intermediate",
+    "emoji": "🧠",
+    "stars": "25k+"
+  },
+  {
+    "id": "repo-composio-001",
+    "category": "repo",
+    "title": "Composio: 250+ Tools for AI Agents",
+    "description": "Composio provides pre-built, managed integrations (GitHub, Slack, Gmail, Jira, etc.) for AI agents with automatic authentication — no more writing custom tool wrappers.",
+    "url": "https://github.com/ComposioHQ/composio",
+    "tags": ["composio", "tools", "integrations", "agents"],
+    "difficulty": "beginner",
+    "emoji": "🔌",
+    "stars": "15k+"
+  },
+  {
+    "id": "framework-taskweaver-001",
+    "category": "framework",
+    "title": "TaskWeaver: Code-First Data Analysis Agents",
+    "description": "Microsoft TaskWeaver converts user requests into executable code for data analysis, visualization, and file processing — a specialized agent framework for data science tasks.",
+    "url": "https://github.com/microsoft/TaskWeaver",
+    "tags": ["taskweaver", "microsoft", "data-analysis", "code-gen"],
+    "difficulty": "intermediate",
+    "emoji": "🕷️"
+  },
+  {
+    "id": "framework-agentops-001",
+    "category": "framework",
+    "title": "AgentOps: Observability for AI Agents",
+    "description": "AgentOps provides session replay, cost tracking, error monitoring, and LLM analytics for AI agents — essential for debugging and optimizing production agentic systems.",
+    "url": "https://www.agentops.ai/",
+    "tags": ["agentops", "observability", "debugging", "monitoring"],
+    "difficulty": "intermediate",
+    "emoji": "🔭"
+  },
+  {
+    "id": "framework-llamacpp-001",
+    "category": "framework",
+    "title": "llama.cpp: Pure C++ LLM Inference",
+    "description": "llama.cpp enables LLM inference on CPU and Apple Silicon in pure C++ with minimal dependencies. The foundation for many local LLM tools — incredibly memory efficient with GGUF quantization.",
+    "url": "https://github.com/ggerganov/llama.cpp",
+    "tags": ["llamacpp", "cpp", "local", "quantization", "cpu"],
+    "difficulty": "advanced",
+    "emoji": "⚙️"
+  },
+  {
+    "id": "concept-agentic-loop-001",
+    "category": "concept",
+    "title": "The Agentic Loop: Perception, Planning, Acting",
+    "description": "Modern AI agents follow a continuous loop: perceive environment (inputs), update internal state (memory), plan next action (reasoning), act (tool call), and repeat. Understanding this loop is fundamental.",
+    "url": "https://www.anthropic.com/research/building-effective-agents",
+    "tags": ["agentic-loop", "perception", "planning", "acting"],
+    "difficulty": "beginner",
+    "emoji": "🔄"
+  },
+  {
+    "id": "sap-fiori-ai-001",
+    "category": "sap-ai",
+    "title": "SAP Fiori Elements with AI: Predictive Analytics UI",
+    "description": "SAP Fiori Elements now supports AI-powered analytical cards, smart filter suggestions, and predictive chart overlays — bringing AI insights directly into enterprise UX.",
+    "url": "https://help.sap.com/docs/SAP_FIORI_tools",
+    "tags": ["fiori", "ui", "analytics", "predictive"],
+    "difficulty": "intermediate",
+    "emoji": "🎨"
+  },
+  {
+    "id": "paper-gorilla-001",
+    "category": "paper",
+    "title": "Gorilla: LLM That Writes API Calls",
+    "description": "Gorilla (UC Berkeley, 2023) fine-tuned an LLM on API documentation and showed it can generate accurate API calls with complex parameters — a foundational paper for tool-using agents.",
+    "url": "https://arxiv.org/abs/2305.15334",
+    "tags": ["gorilla", "api-calls", "tool-use", "berkeley"],
+    "difficulty": "intermediate",
+    "emoji": "🦍"
+  },
+  {
+    "id": "concept-sparse-attention-001",
+    "category": "concept",
+    "title": "Sparse Attention: Scaling Context to Millions of Tokens",
+    "description": "Sparse attention (FlashAttention, Ring Attention, Sliding Window) reduces quadratic attention complexity to linear, enabling context windows of 1M+ tokens in models like Gemini 1.5.",
+    "url": "https://arxiv.org/abs/2205.14135",
+    "tags": ["sparse-attention", "flash-attention", "long-context", "efficiency"],
+    "difficulty": "advanced",
+    "emoji": "✨"
+  },
+  {
+    "id": "framework-agno-workflow-001",
+    "category": "framework",
+    "title": "Agno Multi-Modal Agents",
+    "description": "Agno agents natively handle text, images, audio, and video. Build multi-modal research agents that can analyze images, summarize videos, and process documents in a single pipeline.",
+    "url": "https://docs.agno.com/agents/multimodal",
+    "tags": ["agno", "multimodal", "vision", "audio"],
+    "difficulty": "intermediate",
+    "emoji": "🎭"
+  },
+  {
+    "id": "concept-thinking-001",
+    "category": "concept",
+    "title": "Extended Thinking: LLMs That Reason Before Answering",
+    "description": "Extended thinking (Claude 3.7, o1, o3, DeepSeek-R1) gives LLMs a scratchpad to reason extensively before giving a final answer — dramatically improving complex reasoning tasks.",
+    "url": "https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking",
+    "tags": ["thinking", "reasoning", "o1", "claude"],
+    "difficulty": "intermediate",
+    "emoji": "💭"
+  },
+  {
+    "id": "repo-anthropic-sdk-001",
+    "category": "repo",
+    "title": "Anthropic Python SDK",
+    "description": "The official Anthropic Python SDK — the cleanest way to call Claude APIs with streaming, tool use, vision, extended thinking, and prompt caching support.",
+    "url": "https://github.com/anthropics/anthropic-sdk-python",
+    "tags": ["anthropic", "claude", "sdk", "python"],
+    "difficulty": "beginner",
+    "emoji": "🐍",
+    "stars": "3k+"
+  },
+  {
+    "id": "concept-prompt-caching-001",
+    "category": "concept",
+    "title": "Prompt Caching: 90% Cost Reduction for Long Contexts",
+    "description": "Anthropic's prompt caching caches the key-value states of your prompt prefix, enabling 90% cost reduction and 85% latency reduction when reusing system prompts and long documents.",
+    "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching",
+    "tags": ["caching", "cost-reduction", "performance", "anthropic"],
+    "difficulty": "intermediate",
+    "emoji": "💰"
+  },
+  {
+    "id": "framework-marvin-001",
+    "category": "framework",
+    "title": "Marvin: AI Engineering Toolkit",
+    "description": "Marvin by Prefect provides Python decorators to turn any function into an AI-powered function — `@ai_classifier`, `@ai_fn`, `cast()`, `extract()`. AI becomes a library, not a system.",
+    "url": "https://www.askmarvin.ai/",
+    "tags": ["marvin", "prefect", "decorators", "pythonic"],
+    "difficulty": "intermediate",
+    "emoji": "🤖"
+  },
+  {
+    "id": "paper-claude-003",
+    "category": "paper",
+    "title": "Claude's Character: Values, Knowledge, and Wisdom",
+    "description": "Anthropic's model card and alignment papers explain how Claude is trained to be helpful, harmless, and honest — the HHH framework and its practical implications for enterprise AI.",
+    "url": "https://www.anthropic.com/claude",
+    "tags": ["claude", "alignment", "values", "hhh"],
+    "difficulty": "beginner",
+    "emoji": "💎"
+  },
+  {
+    "id": "concept-batch-inference-001",
+    "category": "concept",
+    "title": "Batch Inference: 50% Cost Reduction for Offline Processing",
+    "description": "Batch APIs (Anthropic, OpenAI) process large volumes of requests asynchronously at 50% discount. Ideal for bulk classification, summarization, evaluation, and data processing pipelines.",
+    "url": "https://docs.anthropic.com/en/docs/build-with-claude/batch-processing",
+    "tags": ["batch", "cost", "async", "bulk-processing"],
+    "difficulty": "intermediate",
+    "emoji": "📦"
+  },
+  {
+    "id": "framework-instructor-strict-001",
+    "category": "framework",
+    "title": "Mirascope: Pythonic LLM Abstractions",
+    "description": "Mirascope provides clean, type-safe Python interfaces for LLMs with collocated prompts and classes — a minimalist alternative to LangChain with better developer experience.",
+    "url": "https://mirascope.com/",
+    "tags": ["mirascope", "type-safe", "minimalist", "python"],
+    "difficulty": "intermediate",
+    "emoji": "🔮"
+  },
+  {
+    "id": "repo-autogen-studio-001",
+    "category": "repo",
+    "title": "AutoGen Studio: Visual Multi-Agent Builder",
+    "description": "AutoGen Studio is a low-code UI for building, testing, and deploying multi-agent workflows. Define agents visually, run them, inspect message flows, and export to code.",
+    "url": "https://github.com/microsoft/autogen/tree/main/python/packages/autogen-studio",
+    "tags": ["autogen-studio", "visual", "low-code", "ui"],
+    "difficulty": "beginner",
+    "emoji": "🎨",
+    "stars": "5k+"
+  },
+  {
+    "id": "concept-reranking-001",
+    "category": "concept",
+    "title": "Reranking: The Secret Weapon of Production RAG",
+    "description": "Rerankers (Cohere Rerank, ColBERT, bge-reranker) score retrieved documents for relevance to the query. Adding a reranker step typically improves RAG answer quality by 20-40%.",
+    "url": "https://docs.cohere.com/docs/reranking",
+    "tags": ["reranking", "rag", "retrieval", "cohere"],
+    "difficulty": "intermediate",
+    "emoji": "🏆"
+  },
+  {
+    "id": "sap-cloud-transport-ai-001",
+    "category": "sap-ai",
+    "title": "AI-Powered Change Management in SAP",
+    "description": "SAP uses AI to analyze change impacts in S/4HANA upgrades, recommending which custom code needs adaptation — reducing upgrade project timelines by up to 40%.",
+    "url": "https://www.sap.com/products/erp/rise.html",
+    "tags": ["sap", "change-management", "upgrades", "custom-code"],
+    "difficulty": "intermediate",
+    "emoji": "🔄"
+  },
+  {
+    "id": "concept-function-calling-advanced-001",
+    "category": "concept",
+    "title": "Parallel Function Calling: Multiple Tools at Once",
+    "description": "Modern LLMs (GPT-4, Claude 3, Gemini) can call multiple tools in parallel in a single inference pass — enabling agents to gather information concurrently and reduce latency significantly.",
+    "url": "https://docs.anthropic.com/en/docs/build-with-claude/tool-use",
+    "tags": ["parallel-tools", "function-calling", "concurrency", "latency"],
+    "difficulty": "intermediate",
+    "emoji": "⚡"
+  },
+  {
+    "id": "paper-react-original-001",
+    "category": "paper",
+    "title": "ReAct: Synergizing Reasoning and Acting in LLMs",
+    "description": "The original ReAct paper (Yao et al., 2022) demonstrates that interleaving reasoning traces with actions leads to more grounded, factual, and interpretable agent behavior than either alone.",
+    "url": "https://arxiv.org/abs/2210.03629",
+    "tags": ["react", "reasoning", "acting", "agents"],
+    "difficulty": "intermediate",
+    "emoji": "⚗️"
+  },
+  {
+    "id": "concept-semantic-chunking-001",
+    "category": "concept",
+    "title": "Semantic Chunking: Better RAG Through Smarter Splitting",
+    "description": "Instead of fixed-size text chunks, semantic chunking splits documents at natural semantic boundaries. Combined with hierarchical chunking and late chunking, it dramatically improves retrieval quality.",
+    "url": "https://python.langchain.com/docs/how_to/semantic-chunker/",
+    "tags": ["chunking", "rag", "embeddings", "semantic"],
+    "difficulty": "intermediate",
+    "emoji": "✂️"
+  },
+  {
+    "id": "repo-flowise-001",
+    "category": "repo",
+    "title": "Flowise: Drag & Drop LLM App Builder",
+    "description": "Flowise is an open-source drag-and-drop UI for building LLM apps and agents using LangChain and LlamaIndex components — deploy as Docker, embed in your app, or use the API.",
+    "url": "https://github.com/FlowiseAI/Flowise",
+    "tags": ["flowise", "visual", "no-code", "langchain"],
+    "difficulty": "beginner",
+    "emoji": "🌊",
+    "stars": "35k+"
+  },
+  {
+    "id": "concept-multi-hop-001",
+    "category": "concept",
+    "title": "Multi-Hop Reasoning: Chaining Evidence Across Sources",
+    "description": "Multi-hop reasoning requires synthesizing information from multiple documents or reasoning steps. Agents must decompose questions, retrieve intermediate facts, and compose final answers.",
+    "url": "https://hotpotqa.github.io/",
+    "tags": ["multi-hop", "reasoning", "qa", "complex-questions"],
+    "difficulty": "advanced",
+    "emoji": "🔀"
+  },
+  {
+    "id": "sap-btp-kyma-ai-001",
+    "category": "sap-ai",
+    "title": "Deploying AI Models on SAP BTP Kyma Runtime",
+    "description": "Kyma Runtime on SAP BTP enables deploying custom AI/ML containers with Kubernetes. Host PyTorch or TensorFlow models, connect to SAP AI Core, and expose inference APIs.",
+    "url": "https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-environment",
+    "tags": ["kyma", "btp", "kubernetes", "deployment"],
+    "difficulty": "advanced",
+    "emoji": "☸️"
+  },
+  {
+    "id": "concept-ai-safety-001",
+    "category": "concept",
+    "title": "AI Safety Fundamentals: Why Alignment Matters",
+    "description": "AI safety addresses ensuring AI systems do what humans intend at scale. Key concepts: alignment, robustness, interpretability, scalable oversight, and the risk from misaligned goal pursuit.",
+    "url": "https://aisafety.com/",
+    "tags": ["safety", "alignment", "interpretability", "oversight"],
+    "difficulty": "beginner",
+    "emoji": "🛡️"
+  },
+  {
+    "id": "framework-openai-agents-001",
+    "category": "framework",
+    "title": "OpenAI Agents SDK (Swarm Successor)",
+    "description": "OpenAI's production-ready Agents SDK supports handoffs between specialized agents, built-in tool integrations (web search, code execution, file search), and guardrails.",
+    "url": "https://openai.com/index/new-tools-for-building-agents/",
+    "tags": ["openai", "agents-sdk", "handoffs", "production"],
+    "difficulty": "intermediate",
+    "emoji": "🤖"
+  },
+  {
+    "id": "concept-context-engineering-001",
+    "category": "concept",
+    "title": "Context Engineering: The Most Important AI Skill",
+    "description": "Context engineering is the art of deciding what information goes into an LLM's context window and when. Better than prompt engineering — it's about structuring, filtering, and prioritizing information.",
+    "url": "https://ycombinator.com/blog/context-engineering",
+    "tags": ["context-engineering", "prompting", "information-design"],
+    "difficulty": "intermediate",
+    "emoji": "🎯"
+  }
+]
