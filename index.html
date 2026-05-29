@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Daily Hub — Learn Something New Every Day</title>
+  <meta name="description" content="Your daily AI learning companion. Discover new frameworks, papers, tools, SAP AI insights, and agent patterns every day." />
+  <meta property="og:title" content="AI Daily Hub" />
+  <meta property="og:description" content="Daily AI learning: frameworks, agents, SAP AI, research papers, and trending repos — curated fresh every day." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#8b5cf6" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+<!-- Animated background -->
+<div class="bg-scene" aria-hidden="true">
+  <div class="bg-gradient"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<!-- ─── Header ─── -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="AI Daily Hub home">
+        <div class="logo-icon">🧠</div>
+        <span class="logo-text">AI Daily Hub</span>
+      </a>
+      <div class="header-meta">
+        <div class="streak-badge" title="Your daily learning streak">
+          <span class="streak-fire">🔥</span>
+          <span id="streak-count">1</span>
+          <span>day streak</span>
+        </div>
+        <span class="date-badge" id="header-date"></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ─── Main ─── -->
+<main>
+  <div class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-eyebrow">
+        <span>✨</span> Daily AI Learning
+      </div>
+      <h1 class="hero-title">Grow in AI<br/>Every Single Day</h1>
+      <p class="hero-sub">
+        Fresh AI content curated daily — frameworks, agents, SAP AI, research papers, and trending repositories.
+        Something new awaits you every morning.
+      </p>
+      <p class="hero-sub" style="font-size:15px; margin-top:-16px; margin-bottom:32px;">
+        <strong style="color:var(--text-primary)">Today:</strong> <span id="hero-date"></span>
+      </p>
+      <div class="hero-actions">
+        <a href="#daily-picks" class="btn btn-primary">
+          🚀 Today's Picks
+        </a>
+        <button class="btn btn-secondary" id="share-btn">
+          🔗 Share This Page
+        </button>
+        <a href="https://github.com/sunil-kalmodiya/ai-daily-hub" target="_blank" rel="noopener" class="btn btn-secondary">
+          ⭐ Star on GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- Stats Row -->
+    <div class="stats-row" role="region" aria-label="Your learning statistics">
+      <div class="stat-card">
+        <span class="stat-value" id="stat-streak">1</span>
+        <span class="stat-label">🔥 Day Streak</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="stat-learned">0</span>
+        <span class="stat-label">✅ Items Learned</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="stat-total">—</span>
+        <span class="stat-label">📚 Total Items</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="stat-days">0</span>
+        <span class="stat-label">📅 Days Visited</span>
+      </div>
+    </div>
+
+    <!-- ─── Today's Featured Picks ─── -->
+    <section class="section" id="daily-picks">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-title-icon icon-purple">🌟</span>
+          Today's Featured Picks
+        </h2>
+        <span class="section-badge">Changes Daily</span>
+      </div>
+      <div class="cards-grid" id="daily-grid">
+        <!-- Skeleton -->
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+      </div>
+    </section>
+
+    <!-- ─── Bonus Picks ─── -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-title-icon icon-blue">🎁</span>
+          Bonus Picks
+        </h2>
+        <span class="section-badge">More to Explore</span>
+      </div>
+      <div class="cards-grid" id="bonus-grid">
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+      </div>
+    </section>
+
+    <!-- ─── GitHub Trending ─── -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-title-icon icon-green" style="background:rgba(16,185,129,0.2)">📈</span>
+          AI Repos Trending on GitHub
+        </h2>
+        <span id="trending-status"></span>
+      </div>
+      <div class="trending-list" id="trending-list">
+        <!-- Loading state -->
+        <div class="skeleton" style="height:64px;border-radius:12px;"></div>
+        <div class="skeleton" style="height:64px;border-radius:12px;"></div>
+        <div class="skeleton" style="height:64px;border-radius:12px;"></div>
+      </div>
+    </section>
+
+    <!-- ─── Explore All ─── -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-title-icon icon-teal">🔍</span>
+          Explore All Content
+        </h2>
+      </div>
+
+      <!-- Filters -->
+      <div class="filters-bar">
+        <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input
+            type="search"
+            class="search-input"
+            id="search-input"
+            placeholder="Search frameworks, agents, SAP AI…"
+            aria-label="Search content"
+          />
+        </div>
+        <div class="filter-pills" role="group" aria-label="Filter by category">
+          <button class="pill active" data-cat="all">All</button>
+          <button class="pill" data-cat="framework"><span class="dot dot-framework"></span>Frameworks</button>
+          <button class="pill" data-cat="agent"><span class="dot dot-agent"></span>Agents</button>
+          <button class="pill" data-cat="sap-ai"><span class="dot dot-sap-ai"></span>SAP AI</button>
+          <button class="pill" data-cat="paper"><span class="dot dot-paper"></span>Papers</button>
+          <button class="pill" data-cat="repo"><span class="dot dot-repo"></span>Repos</button>
+          <button class="pill" data-cat="concept"><span class="dot dot-concept"></span>Concepts</button>
+        </div>
+      </div>
+
+      <div class="cards-grid" id="all-cards-grid">
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+      </div>
+    </section>
+
+    <!-- ─── Progress ─── -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-title-icon icon-amber">📊</span>
+          Your Learning Progress
+        </h2>
+      </div>
+      <div class="progress-grid">
+        <div class="progress-card">
+          <div class="progress-icon">🔥</div>
+          <div class="progress-number" id="prog-streak" style="background:linear-gradient(135deg,#f59e0b,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">1</div>
+          <div class="progress-label">Day Streak</div>
+        </div>
+        <div class="progress-card">
+          <div class="progress-icon">✅</div>
+          <div class="progress-number" style="background:linear-gradient(135deg,#10b981,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;" id="prog-learned">0</div>
+          <div class="progress-label">Items Learned</div>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar-label">
+              <span>Progress</span>
+              <span id="progress-pct">0%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="progress-card">
+          <div class="progress-icon">📅</div>
+          <div class="progress-number" style="background:linear-gradient(135deg,#8b5cf6,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;" id="prog-days">0</div>
+          <div class="progress-label">Days Visited</div>
+        </div>
+        <div class="progress-card">
+          <div class="progress-icon">🎯</div>
+          <div class="progress-number" style="background:linear-gradient(135deg,#14b8a6,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;" id="stat-total-prog">—</div>
+          <div class="progress-label">Total Resources</div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /container -->
+</main>
+
+<!-- ─── Footer ─── -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-text">AI Daily Hub · Built for daily AI learning · <a href="https://github.com/sunil-kalmodiya/ai-daily-hub" target="_blank" rel="noopener" style="color:var(--purple);text-decoration:none;">View Source</a></span>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="https://arxiv.org/search/?searchtype=all&query=AI+agents&start=0" target="_blank" rel="noopener" class="footer-link">arXiv AI</a>
+        <a href="https://github.com/trending?l=python&since=daily" target="_blank" rel="noopener" class="footer-link">GitHub Trending</a>
+        <a href="https://huggingface.co/papers" target="_blank" rel="noopener" class="footer-link">HF Papers</a>
+        <a href="https://www.sap.com/products/artificial-intelligence.html" target="_blank" rel="noopener" class="footer-link">SAP AI</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast notification -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <span>✓</span>
+  <span class="toast-msg"></span>
+</div>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
