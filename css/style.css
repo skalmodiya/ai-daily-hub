@@ -607,6 +607,46 @@ body {
   border-radius: 50px;
 }
 
+/* ─── Trending Controls ─── */
+.trending-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.select-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.select-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.styled-select {
+  appearance: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 13px;
+  padding: 7px 32px 7px 12px;
+  cursor: pointer;
+  transition: var(--transition);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a0a0c0' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  outline: none;
+}
+.styled-select:hover { border-color: var(--border-hover); background-color: var(--bg-card-hover); }
+.styled-select:focus { border-color: var(--purple); box-shadow: 0 0 0 2px rgba(139,92,246,0.2); }
+.styled-select option { background: #1a1a2e; color: var(--text-primary); }
+
 /* ─── Trending Section ─── */
 .trending-list {
   display: flex;
