@@ -387,34 +387,45 @@ async function init() {
     }, 280);
   });
 
-  // Tab click handlers
-  document.querySelectorAll('.tab[data-tab]').forEach(tab => {
-    tab.addEventListener('click', () => switchTab(tab.dataset.tab));
-  });
+  // ── Scroll-spy with IntersectionObserver ──────────────
+  const sections = document.querySelectorAll('.page-section');
+  const tabs = document.querySelectorAll('.tab[data-section]');
 
-  // Restore tab from URL hash (e.g. #explore)
-  const hash = window.location.hash.replace('#', '');
-  const validTabs = ['today', 'bonus', 'trending', 'explore', 'progress'];
-  if (validTabs.includes(hash)) switchTab(hash);
+  function setActiveTab(sectionId) {
+    tabs.forEach(t => t.classList.toggle('active', t.dataset.section === sectionId));
+  }
+
+  // Track which sections are currently visible; activate the topmost one
+  const visible = new Set();
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) visible.add(e.target.id);
+      else visible.delete(e.target.id);
+    });
+    // Pick the section that appears first in DOM order among visible ones
+    for (const s of sections) {
+      if (visible.has(s.id)) { setActiveTab(s.id); break; }
+    }
+  }, {
+    rootMargin: '-112px 0px -40% 0px',  // offset matches scroll-margin-top
+    threshold: 0
+  });
+  sections.forEach(s => observer.observe(s));
+
+  // ── Click-to-jump: smooth scroll to section ───────────
+  tabs.forEach(tab => {
+    tab.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.getElementById(tab.dataset.section);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
 
   // Share button
   document.getElementById('share-btn').addEventListener('click', shareApp);
 
   // Update stats after load
   updateProgressUI(state);
-}
-
-// ─── Tab switching ────────────────────────────────────
-function switchTab(tabId) {
-  document.querySelectorAll('.tab').forEach(t => {
-    t.classList.toggle('active', t.dataset.tab === tabId);
-    t.setAttribute('aria-selected', t.dataset.tab === tabId);
-  });
-  document.querySelectorAll('.tab-panel').forEach(p => {
-    p.classList.toggle('active', p.id === `panel-${tabId}`);
-  });
-  // Persist active tab in URL hash without scrolling
-  history.replaceState(null, '', `#${tabId}`);
 }
 
 document.addEventListener('DOMContentLoaded', init);

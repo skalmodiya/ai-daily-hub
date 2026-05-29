@@ -89,7 +89,7 @@ body {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(20px) saturate(1.5);
-  background: rgba(10, 10, 15, 0.88);
+  background: rgba(10, 10, 15, 0.92);
   border-bottom: 1px solid var(--border);
   padding: 12px 0 0;
   transition: var(--transition);
@@ -281,7 +281,6 @@ body {
 .stat-label { font-size: 12px; color: var(--text-muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
 
 /* ─── Section Titles ─── */
-.section { margin-bottom: 64px; }
 .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 12px; }
 .section-title {
   font-size: 22px;
@@ -767,8 +766,7 @@ body {
   .toast { left: 16px; right: 16px; bottom: 16px; }
   .footer-inner { justify-content: center; text-align: center; }
   .section-header { flex-direction: column; align-items: flex-start; }
-  .tab-bar-wrap { top: 61px; margin-left: -16px; margin-right: -16px; padding-left: 16px; padding-right: 16px; }
-  .tab-bar { margin: 0 -16px; padding-left: 16px; padding-right: 16px; }
+  .tab-bar { margin: 0 -16px; padding: 0 16px; }
   .tab { padding: 10px 12px; font-size: 13px; }
   .tab-label { display: none; }
   .tab-icon { font-size: 18px; }
@@ -782,18 +780,16 @@ body {
   .stats-row { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* ─── Tab Bar (inside header) ─── */
+/* ─── Tab Bar (frozen in header, scroll-spy + click-to-jump) ─── */
 .tab-bar {
   display: flex;
-  gap: 2px;
+  gap: 0;
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
   border-top: 1px solid var(--border);
-  padding: 0 0 1px;
   margin: 0 -24px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 0 24px;
 }
 .tab-bar::-webkit-scrollbar { display: none; }
 
@@ -801,32 +797,25 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 10px 18px;
-  border-radius: 0;
+  padding: 11px 20px;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   transition: all var(--transition);
   border: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   background: transparent;
   color: var(--text-muted);
   white-space: nowrap;
-  position: relative;
+  text-decoration: none;
   font-family: 'Inter', sans-serif;
   margin-bottom: -1px;
 }
-
-.tab:hover {
-  color: var(--text-primary);
-  background: rgba(255,255,255,0.04);
-}
-
+.tab:hover { color: var(--text-secondary); background: rgba(255,255,255,0.03); }
 .tab.active {
   color: var(--purple);
   font-weight: 600;
   border-bottom-color: var(--purple);
-  background: rgba(139, 92, 246, 0.07);
 }
 
 .tab-icon { font-size: 15px; line-height: 1; }
@@ -843,8 +832,7 @@ body {
 }
 
 .tab-live {
-  width: 7px;
-  height: 7px;
+  width: 7px; height: 7px;
   border-radius: 50%;
   background: var(--green);
   display: none;
@@ -852,12 +840,11 @@ body {
 }
 .tab-live.visible { display: inline-block; }
 
-/* ─── Tab Panels ─── */
-.tab-panel {
-  display: none;
-  animation: fadeInUp 0.25s ease both;
+/* ─── Page Sections (single continuous page) ─── */
+.page-section {
+  margin-bottom: 80px;
+  scroll-margin-top: 112px;   /* clears sticky header height */
 }
-.tab-panel.active { display: block; }
 
 /* ─── Scrollbar ─── */
 ::-webkit-scrollbar { width: 6px; }
