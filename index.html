@@ -26,6 +26,7 @@
 <!-- ─── Header ─── -->
 <header class="site-header">
   <div class="container">
+    <!-- Row 1: logo + meta -->
     <div class="header-inner">
       <a href="#" class="logo" aria-label="AI Daily Hub home">
         <div class="logo-icon">🧠</div>
@@ -38,8 +39,34 @@
           <span>day streak</span>
         </div>
         <span class="date-badge" id="header-date"></span>
+        <button class="btn btn-secondary btn-sm" id="share-btn">🔗 Share</button>
       </div>
     </div>
+    <!-- Row 2: tab bar -->
+    <nav class="tab-bar" role="tablist" aria-label="Content sections">
+      <button class="tab active" role="tab" data-tab="today" aria-selected="true">
+        <span class="tab-icon">🌟</span>
+        <span class="tab-label">Today's Picks</span>
+        <span class="tab-badge">Daily</span>
+      </button>
+      <button class="tab" role="tab" data-tab="bonus" aria-selected="false">
+        <span class="tab-icon">🎁</span>
+        <span class="tab-label">Bonus Picks</span>
+      </button>
+      <button class="tab" role="tab" data-tab="trending" aria-selected="false">
+        <span class="tab-icon">📈</span>
+        <span class="tab-label">Trending</span>
+        <span class="tab-live" id="tab-live-dot"></span>
+      </button>
+      <button class="tab" role="tab" data-tab="explore" aria-selected="false">
+        <span class="tab-icon">🔍</span>
+        <span class="tab-label">Explore All</span>
+      </button>
+      <button class="tab" role="tab" data-tab="progress" aria-selected="false">
+        <span class="tab-icon">📊</span>
+        <span class="tab-label">My Progress</span>
+      </button>
+    </nav>
   </div>
 </header>
 
@@ -63,9 +90,6 @@
       <div class="hero-actions">
         <button class="btn btn-primary" onclick="switchTab('today')">
           🚀 Today's Picks
-        </button>
-        <button class="btn btn-secondary" id="share-btn">
-          🔗 Share This Page
         </button>
         <a href="https://github.com/skalmodiya/ai-daily-hub" target="_blank" rel="noopener" class="btn btn-secondary">
           ⭐ Star on GitHub
@@ -91,34 +115,6 @@
         <span class="stat-value" id="stat-days">0</span>
         <span class="stat-label">📅 Days Visited</span>
       </div>
-    </div>
-
-    <!-- ─── Tab Bar ─── -->
-    <div class="tab-bar-wrap">
-      <nav class="tab-bar" role="tablist" aria-label="Content sections">
-        <button class="tab active" role="tab" data-tab="today" aria-selected="true">
-          <span class="tab-icon">🌟</span>
-          <span class="tab-label">Today's Picks</span>
-          <span class="tab-badge">Daily</span>
-        </button>
-        <button class="tab" role="tab" data-tab="bonus" aria-selected="false">
-          <span class="tab-icon">🎁</span>
-          <span class="tab-label">Bonus Picks</span>
-        </button>
-        <button class="tab" role="tab" data-tab="trending" aria-selected="false">
-          <span class="tab-icon">📈</span>
-          <span class="tab-label">Trending</span>
-          <span class="tab-live" id="tab-live-dot"></span>
-        </button>
-        <button class="tab" role="tab" data-tab="explore" aria-selected="false">
-          <span class="tab-icon">🔍</span>
-          <span class="tab-label">Explore All</span>
-        </button>
-        <button class="tab" role="tab" data-tab="progress" aria-selected="false">
-          <span class="tab-icon">📊</span>
-          <span class="tab-label">My Progress</span>
-        </button>
-      </nav>
     </div>
 
     <!-- ─── Tab Panels ─── -->
