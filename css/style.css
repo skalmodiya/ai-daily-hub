@@ -438,6 +438,7 @@ body {
   top: 0; left: 0; right: 0;
   height: 2px;
   background: linear-gradient(90deg, var(--green), #34d399);
+  pointer-events: none;
 }
 
 @keyframes fadeInUp {
@@ -570,6 +571,7 @@ body {
   top: 0; left: 0; right: 0;
   height: 2px;
   background: linear-gradient(90deg, var(--purple), var(--blue));
+  pointer-events: none;
 }
 .daily-label {
   position: absolute;
