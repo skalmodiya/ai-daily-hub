@@ -542,8 +542,20 @@ body {
   font-weight: 600;
   text-decoration: none;
   transition: var(--transition);
+  position: relative;
+  z-index: 2;
 }
 .card-link:hover { color: var(--blue); gap: 10px; }
+
+.btn-icon {
+  position: relative;
+  z-index: 2;
+}
+
+.card-header, .card-title, .card-desc, .card-tags, .card-footer {
+  position: relative;
+  z-index: 1;
+}
 
 /* Category color coding */
 .cat-framework .card-emoji-wrap { background: rgba(139, 92, 246, 0.15); }
